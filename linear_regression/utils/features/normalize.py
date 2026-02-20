@@ -17,7 +17,7 @@ def normalize(features):
     if features.shape[0] > 1:
         features_normalized -= features_mean
 
-    features_deviation[features_deviation == 0] =1
+    features_deviation = np.where(features_deviation == 0, 1, features_deviation)
 
     features_normalized /= features_deviation
 
