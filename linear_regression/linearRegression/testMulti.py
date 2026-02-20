@@ -3,6 +3,9 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import plotly
 import plotly.graph_objs as go
+import os
+import sys
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 plotly.offline.init_notebook_mode()
 from linear_regression import LinearRegression
